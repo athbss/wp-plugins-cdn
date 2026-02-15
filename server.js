@@ -11,6 +11,19 @@ app.use(cors());
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'WordPress Plugins CDN',
+    endpoints: {
+      health: '/health',
+      plugins: '/plugins',
+      pluginInfo: '/:plugin/plugin-info.json'
+    }
+  });
+});
+
 // JSON endpoint for plugin info (support both formats)
 app.get('/:plugin/info.json', (req, res) => {
   const pluginName = req.params.plugin;
