@@ -11,8 +11,13 @@ app.use(cors());
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
-// JSON endpoint for plugin info
+// JSON endpoint for plugin info (support both formats)
 app.get('/:plugin/info.json', (req, res) => {
+  const pluginName = req.params.plugin;
+  res.sendFile(path.join(__dirname, 'public', pluginName, 'plugin-info.json'));
+});
+
+app.get('/:plugin/plugin-info.json', (req, res) => {
   const pluginName = req.params.plugin;
   res.sendFile(path.join(__dirname, 'public', pluginName, 'plugin-info.json'));
 });
