@@ -35,7 +35,7 @@ GitHub Releases: plugin.zip
 2. לחץ **Generate Domain** (אם עדיין לא קיים)
 3. או הוסף **Custom Domain** משלך
 
-**URL הנוכחי:** https://cdn-server-production.up.railway.app
+**URL מותאם:** https://updates.amiteam.io
 
 ## שלב 2: הגדרת GitHub Secrets
 

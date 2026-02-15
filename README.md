@@ -25,5 +25,9 @@ public/
 
 הפלאגינים בוורדפרס צריכים להצביע ל:
 ```
-Update URI: https://your-domain.com/plugin-name/info.json
+Update URI: https://updates.amiteam.io/plugin-name/plugin-info.json
 ```
+
+דוגמה:
+- AT Agency Sites Manager: https://updates.amiteam.io/at-agency-sites-manager/plugin-info.json
+- WordPress AI Assistant: https://updates.amiteam.io/wordpress-ai-assistant/plugin-info.json
